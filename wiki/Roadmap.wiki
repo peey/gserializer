@@ -8,3 +8,4 @@ Currently, GSerializer is a stand-alone library with no dependencies on any othe
 
   * Serialization format options (i.e. XML, PHP style serialized strings etc.)
   * Enhanced security protection
+  * Compatibility with PHP simple objects
