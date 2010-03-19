@@ -1,5 +1,5 @@
 #summary Roadmap
-#labels F,Phase-Requirements
+#labels Featured,Phase-Requirements
 = Roadmap =
 
 Currently, GSerializer is a stand-alone library with no dependencies on any other library - I would like to keep it this way.
