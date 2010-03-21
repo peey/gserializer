@@ -7,7 +7,7 @@ The PHP serialization feature is currently in the *requirements* phase.
 == Serialization Format ==
 The serialization format for simple types will be:
 
-||*Type*  ||*Serialized*                ||*Example*      ||
+|| *Type*  || *Serialized*                || *Example*      ||
 ||NULL	  ||N;	                        ||N;             ||
 ||Integer ||i:$data;	                ||i:123;         ||
 ||Double  ||d:$data;	                ||d:1.23;        ||
@@ -57,9 +57,9 @@ Where, each $member in $members has the following format:
 
 Where $value is one of the data types as already defined above and $visibility_modifier is:
 
-||*PHP modifier*||*Format*                ||*Example*        ||
+|| *PHP modifier*|| *Format*                || *Example*        ||
 ||public        ||$name                   ||publicId         ||
-||protected     ||`*`_$var_name           ||`*`_types          ||
+||protected     ||`*`_$var_name           ||`*`_types        ||
 ||private       ||$class_name_$var_name   ||TestClass_types  ||
 
 == Concerns ==
