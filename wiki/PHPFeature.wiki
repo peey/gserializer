@@ -1,0 +1,41 @@
+#summary Requirements for the PHP serialization feature
+#labels Featured,Phase-Requirements
+
+= Introduction =
+The PHP serialization feature is currently in the *requirements* phase. 
+
+The currently serialization format will be:
+
+||*Type*  ||*Serialized*                ||*Example*
+||NULL	  ||N;	                        ||N;
+||Integer ||i:$data;	                ||i:123;
+||Double  ||d:$data;	                ||d:1.23;
+||Float	  ||d:$data;	                ||d:1.23;
+||Boolean ||b:$bool_value;              ||b:1;
+||String  ||s:$data_length:"$data";	||s:5:"Hello"
+||Array	a:$key_count:{$key;$value}	||a:1:{i:1;i:2}
+||$value can be any data type||||
+
+*Object Serialization*
+We need a bit more room to describe the way objects are serialized.
+Take the following PHP\JS Object
+
+PHP serializes the string as: 
+
+`string 'O:9:"TestClass":4:{s:13:"�TestClass�id";i:123;s:8:"publicid";i:123;s:15:"�TestClass�name";s:2:"RJ";s:20:"�TestClass�languages";a:3:{i:0;s:3:"php";i:1;s:6:"erlang";i:2;s:3:"etc";}}' (length=179)`
+
+The format is:
+`o:$class_name_len:$class_name:$member_len:{$value} ||o:10:"ExampleObj":2:{}`
+
+
+There are a few initial concerns, for example, how to treat functions of an object in JavaScript as PHP has no such feature. A solution may be to wrap the function up in an instance variable with a consistent naming scheme, or to create another object out of it and again use a consistent naming scheme.
+
+Ideas are welcome.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
