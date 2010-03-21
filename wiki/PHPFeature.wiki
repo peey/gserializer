@@ -59,7 +59,7 @@ Where $value is one of the data types as already defined above and $visibility_m
 
 ||*PHP modifier*||*Format*                ||*Example*        ||
 ||public        ||$name                   ||publicId         ||
-||protected     ||`*`_$var_name           ||*_types          ||
+||protected     ||`*`_$var_name           ||`*`_types          ||
 ||private       ||$class_name_$var_name   ||TestClass_types  ||
 
 == Concerns ==
