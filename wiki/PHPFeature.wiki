@@ -65,4 +65,5 @@ Where $value is one of the data types as already defined above and $visibility_m
 == Concerns ==
 There are a few initial concerns, for example, how to treat functions of an object in JavaScript as PHP has no such feature. A solution may be to wrap the function up in an instance variable with a consistent naming scheme, or to create another object out of it and again use a consistent naming scheme.
 
-Ideas are welcome.
+= Ideas\Suggestions\Comments =
+Ideas are welcome, please comment!
